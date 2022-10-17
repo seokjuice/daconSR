@@ -71,7 +71,7 @@
     , "E_param_strict": true
 
     , "checkpoint_test": 5000000           // for testing (unused)
-    , "checkpoint_save": 100           // for saving model
+    , "checkpoint_save": 12500          // for saving model
     , "checkpoint_print": 100          // for print
   }
 }
