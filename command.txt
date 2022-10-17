@@ -1,0 +1,11 @@
+#Train command
+python -m torch.distributed.launch --nproc_per_node=(number of gpus) --master_port=1234 daconTrain.py --opt options/train.json  --dist True --dataPath_lr (root for low resolution images) --dataPath_hr (root for high resolution images)
+
+#train command example
+python -m torch.distributed.launch --nproc_per_node=2 --master_port=1234 daconTrain.py --opt options/train.json  --dist True --dataPath_lr "/home/work/daicon/HAT/datasets/32interval_128/lr/"  --dataPath_hr "/home/work/daicon/HAT/datasets/32interval_128/hr/"
+
+#Test command
+python daconTest.py --weightPath (Directory path containing model weights) --dataPath (Directory path containing test image) --savePath (Save path) --modelVersion (weights name except _E and _G)
+
+#Test command example
+python daconTest.py --weightPath "./daconSR/psnr25.89/" --dataPath "./testImages/lr/" --savePath "./psnr25_89" --modelVersion model1 model2 model3 model4
