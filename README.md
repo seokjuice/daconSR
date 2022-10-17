@@ -80,7 +80,7 @@ modelVersion에 한개의 모델 이름을 입력하면 복원 결과 및 submis
 복수개의 모델명이 입력된 경우 각 모델의 복원 결과와 앙상블한 이미지, 최종 submission.zip 생성
 
 ## 학습 모델 weight 다운로드 링크
-[[link]](https://drive.google.com/drive/folders/10sDalvd7nDtGv_rqHvOa73__UlhEiXZK?usp=sharing)
+[[link]](https://drive.google.com/file/d/1tPshRKwraCAAq0nR72bMmOqwwWB5vYmq/view?usp=sharing)
 
 
 
